@@ -10,8 +10,18 @@ Rest service designed to find the weather for today. If there is no record of th
 
 ## Before starting the application
 1. create database with any name in your database management system
-2. create a file called ***application.properties*** along the path: **(src/main/resources/application.properties)**. 
-The content of the file should look like this:
+2. create a file called ***application.properties*** along the path: **(src/main/resources/application.properties)**.
+
+###**The content of the file application.properties should look like this:**
+***Datasource properties***
+spring.datasource.url=jdbc:mysql://localhost:3306/{database name}?serverTimezone=UTC
+spring.datasource.username={username}
+spring.datasource.password={password}
+
+***Flyway properties***
+spring.flyway.url=jdbc:mysql://localhost:3306/{database name}?serverTimezone=UTC
+spring.flyway.user={username}
+spring.flyway.password={password}
 
 
 ## Architecture levels
