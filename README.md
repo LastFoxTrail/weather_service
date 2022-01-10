@@ -12,7 +12,7 @@ Rest service designed to find the weather for today. If there is no record of th
 1. create database with any name in your database management system
 2. create a file called ***application.properties*** along the path: **(src/main/resources/application.properties)**.
 
-###**The content of the file application.properties should look like this:**
+**The content of the file application.properties should look like this:**
 ***Datasource properties***
 spring.datasource.url=jdbc:mysql://localhost:3306/{database name}?serverTimezone=UTC
 spring.datasource.username={username}
